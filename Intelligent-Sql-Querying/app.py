@@ -5,7 +5,7 @@ import sqlite3
 from dotenv import load_dotenv
 import google.generativeai as genai
 load_dotenv()
-genai.configure(api_key=os.getenv('AIzaSyANoYmkcYeVCdM7UxpVaIwqVwdJ7ThbOUE'))
+genai.configure(api_key=os.getenv('Your API Key'))
 
 for m in genai.list_models():
     print(m.name)
